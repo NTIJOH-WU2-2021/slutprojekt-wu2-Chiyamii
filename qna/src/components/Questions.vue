@@ -1,17 +1,25 @@
 <template>
-    <div class="questions">
-        <h3>{{ author }}</h3>
-        <p>{{ question }}</p>
+    <div id="questions">
+        <h1>{{ msgg }}</h1>
+        <form>
+            <input type="text" v-model="author">
+            <input type="text" v-model="question">
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </template>
 
 <script>
 export default {
     name: "Questions",
-    props: {
-        author: String,
-        question: String,
+    data() { return {
+        author: '',
+        question: '',
+        };
     },
+    props: {
+        msgg: String
+    }
 }
 </script>
 

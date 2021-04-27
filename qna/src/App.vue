@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-<!--<p>{{ $faker().name.firstName() }}</p>-->
-  <Questions></Questions>
-  <Answers></Answers>
-  <p>{{ name }}</p>
+  <nav id="nav">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <p>{{ name }}</p>
+    <Questions msgg="test"/>
+  </nav>
 </template>
 
 <script>
 //import HelloWorld from "./components/HelloWorld.vue";
-import Answers from "./components/Answers.vue";
+//import Answers from "./components/Answers.vue";
 import Questions from "./components/Questions.vue";
 
 export default {
   name: "App",
-  data() {
-    return {
-      name: '',
-    }
+  data() { return {
+    name: '',
+    };
   },
   components: {
-    //    HelloWorld,
-    Answers,
+    //Answers,
     Questions,
   },
   created(){
