@@ -1,14 +1,15 @@
 <template>
   <nav id="nav">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <p>{{ name }}</p>
-    <Questions msgg="test"/>
+    <p>Username: {{ name }}</p>
+    <Questions msg="Questions:"/>
+    <Answers/>
   </nav>
 </template>
 
 <script>
 //import HelloWorld from "./components/HelloWorld.vue";
-//import Answers from "./components/Answers.vue";
+import Answers from "./components/Answers.vue";
 import Questions from "./components/Questions.vue";
 
 export default {
@@ -18,7 +19,7 @@ export default {
     };
   },
   components: {
-    //Answers,
+    Answers,
     Questions,
   },
   created(){

@@ -5,9 +5,6 @@ import router from "router";
 
 const app = createApp(App);
 
-//app.use(('vue-faker'));
-
 app.config.globalProperties.$faker = faker;
 app.use(router);
 app.mount('#app');
-console.log(faker.random)

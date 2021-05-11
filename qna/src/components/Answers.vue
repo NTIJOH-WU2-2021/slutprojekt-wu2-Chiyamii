@@ -1,16 +1,19 @@
 <template>
-    <div class="answers">
-        <h3>{{ author }}</h3>
-        <p>{{ answer }}</p>
+    <div id="answers">
+        <form id="answerform" v-on:submit.prevent="add_answer">
+            <label for="text2">Answer:</label>
+            <textarea rows="4" cols="50" name="text3" form="userform" v-model="answer"></textarea>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </template>
 
 <script>
 export default {
     name: "Answers",
-    props: {
-        author: String,
-        answer: String,
+    data() { return {
+            answer: '',
+        }
     },
 };
 </script>
