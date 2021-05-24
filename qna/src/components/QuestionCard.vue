@@ -1,11 +1,10 @@
 <template>
-    <!--<router-link to="/{{ index }}">-->
         <ul>
-            <p>{{ que.name }}</p>
             <h2>{{ que.question }}</h2>
-            <p>{{ que.description }}</p>    
+            <p>{{ que.description }}</p> 
+            <p>Posted by: {{ que.name }}</p>
+            <hr> 
         </ul>
-    <!--</router-link>-->
 </template>
 
 <script>

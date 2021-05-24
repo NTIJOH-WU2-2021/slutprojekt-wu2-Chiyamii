@@ -15,14 +15,14 @@
 <script>
 import QuestionCard from './QuestionCard.vue';
 export default {
-  components: { QuestionCard },
+    components: { QuestionCard },
     name: "Questions",
     data() { return {
         name: '',
         question: '',
         description: '',
         previous_questions: [],
-        destinationId: this.$route.params.id,
+        //destinationId: this.$route.params.id,
         };
     },
     props: {

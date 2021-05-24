@@ -1,12 +1,17 @@
 const Question = {
-    template: '<div>Question</div>'
+    template: '<div>Question {{ $route.params.id }}</div>',
+    watch: {
+        $route(to, from) {
+          // react to route changes...
+        }
+    }
 }
 
 const router = new VueRouter({
     routes: [
         // dynamic segments start with a colon
         { path: '/question/:id', 
-        name: 'Questions', 
+        component: Question, 
         // component: () => {
         //     import()
         // };
