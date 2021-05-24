@@ -26,11 +26,11 @@ export default {
             localStorage.setItem('previous_answers', JSON.stringify(this.previous_questions))
         },
     },
-    created() {
-        this.previous_answers = JSON.parse(localStorage.getItem('previous_answers'))
-        this.name = this.$faker.name.firstName()
-        console.log(this.$faker)
-    },
+    // created() {
+    //     this.previous_answers = JSON.parse(localStorage.getItem('previous_answers'))
+    //     this.name = this.$faker.name.firstName()
+    //     console.log(this.$faker)
+    // },
 };
 </script>
 
