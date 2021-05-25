@@ -2,7 +2,7 @@
   <div>
     <nav>
       <h1>Q&A</h1>
-      <p>Username: {{ name }}</p>
+      <!-- <p>Username: {{ name }}</p> -->
     </nav>
     <section>
       <Questions msg="Questions:"/>
@@ -37,7 +37,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -53,7 +52,12 @@ nav {
   padding: 1rem;
 }
 
+h1 {
+  text-align: center;
+}
+
 section {
   padding: 0 15rem;
 }
+
 </style>
