@@ -2,7 +2,7 @@
         <ul>
             <h2>{{ que.question }}</h2>
             <p>{{ que.description }}</p> 
-            <p>Posted by: {{ que.name }}</p>
+            <p class="name">Posted by: {{ que.name }}</p>
             <hr> 
         </ul>
 </template>
@@ -18,8 +18,8 @@ export default {
 <style>
     ul{
         padding: 0;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+    }
+    .name {
+        text-align: right;
     }
 </style>

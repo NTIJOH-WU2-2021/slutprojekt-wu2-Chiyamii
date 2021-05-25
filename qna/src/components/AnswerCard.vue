@@ -1,7 +1,7 @@
 <template>
     <ul>
         <p>{{ answ.answer }}</p> 
-        <p>Posted by: {{ answ.name }}</p>
+        <p class="name">Posted by: {{ answ.name }}</p>
         <hr> 
     </ul>
 </template>
@@ -14,10 +14,10 @@ export default({
 </script>
 
 <style>
-ul {
-    padding: 0;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
+    ul {
+        padding: 0;
+    }
+    .name {
+        text-align: right;
+    }
 </style>
